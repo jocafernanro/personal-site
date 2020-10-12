@@ -1,7 +1,7 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-
+  devtools: true,
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'personal-site',
@@ -10,7 +10,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -36,6 +43,32 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'es',
+            iso: 'en-ES',
+            name: 'Español',
+          },
+          {
+            code: 'en',
+            iso: 'en-US',
+            name: 'English',
+          },
+        ],
+        vueI18n: {
+          fallbackLocale: 'en',
+          messages: {
+            en: require('./locales/en-us.json'),
+            es: require('./locales/es-es.json'),
+          },
+        },
+        defaultLocale: 'en',
+        noPrefixDefaultLocale: true,
+      },
+    ],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

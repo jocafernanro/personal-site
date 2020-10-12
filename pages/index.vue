@@ -1,68 +1,46 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">personal-site</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <app-section is-text-centered>
+      <main-title>{{ $t('home.landing-section.title') }}</main-title>
+      <p
+        class="text-primary font-semibold text-xl font-space-mono"
+        v-html="$t('home.landing-section.hello-code')"
+      ></p>
+      <main-subtitle>{{ $t('home.landing-section.subtitle') }}</main-subtitle>
+      <app-buttons-section>
+        <main-button>{{
+          $t('home.landing-section.buttons.know-me')
+        }}</main-button>
+        <main-button type="secondary">{{
+          $t('home.landing-section.buttons.download-cv')
+        }}</main-button>
+        <main-button type="secondary">{{
+          $t('home.landing-section.buttons.say-hello')
+        }}</main-button>
+      </app-buttons-section>
+    </app-section>
+
+    <app-section>hola</app-section>
   </div>
 </template>
 
 <script>
-export default {}
+import AppSection from '@/components/ui/AppSection'
+import AppButtonsSection from '@/components/ui/AppButtonsSection'
+
+import MainButton from '@/components/elements/MainButton'
+import MainSubtitle from '@/components/elements/MainSubtitle'
+import MainTitle from '@/components/elements/MainTitle'
+
+export default {
+  components: {
+    AppSection,
+    AppButtonsSection,
+    MainButton,
+    MainSubtitle,
+    MainTitle,
+  },
+}
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<style></style>
