@@ -32,7 +32,7 @@ export default {
   },
   computed: {
     textFormat() {
-      return this.isTextCentered ? 'text-center' : 'text-justify'
+      return this.isTextCentered ? 'text-center' : 'text-left'
     },
     wideFormat() {
       return this.isWideFull ? 'w-full' : 'container'

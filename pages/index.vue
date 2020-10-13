@@ -12,7 +12,9 @@
         ></p>
       </template>
 
-      <template #subtitle>{{ $t('home.landing-section.subtitle') }}</template>
+      <template #subtitle>
+        {{ $t('home.landing-section.subtitle') }}
+      </template>
 
       <template #main-button>
         {{ $t('home.landing-section.buttons.know-me') }}
