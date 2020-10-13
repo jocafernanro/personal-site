@@ -22,7 +22,17 @@
         "download-cv": "Download CV.",
         "say-hello": "Say hello."
       }
+    },
+    "what-i-write": {
+      "title": "Some stuff I write.",
+      "subtitle": "I like to learn and share. Writing helps me to strengthen my knowledge and help others to learn and grow."
+    },
+    "what-i-code": {
+      "title": "Some stuff I code",
+      "subtitle": "I love to be creating constantly. Creating allows me to develop my creativity and satisfy my curiosity, as well as improve my knowledge and experience."
     }
   },
-  "read-more": "Leer más"
+
+  "read-more": "Read more.",
+  "see-more": "See more."
 }

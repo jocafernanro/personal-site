@@ -1,12 +1,12 @@
 <template>
-  <h2 class="my-4 font-extrabold text-6xl text-secondary leading-none">
+  <h1 class="font-extrabold text-8xl text-primary tracking-tight">
     <slot></slot>
-  </h2>
+  </h1>
 </template>
 
 <script>
 export default {
-  name: 'MainSubtitle',
+  name: 'ElMainTitle',
 }
 </script>
 

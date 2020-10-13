@@ -1,5 +1,5 @@
 <template>
-  <header class="max-w-6xl mx-auto py-8 flex flex-row justify-between">
+  <header class="container mx-auto py-8 flex flex-row justify-between">
     <div>josematico</div>
     <nav class="relative">
       <ul>
@@ -25,11 +25,8 @@
 
 <script>
 export default {
-  name: 'AppHeader',
+  name: 'UiHeader',
   computed: {
-    isContentPage() {
-      return this.$route.name.includes('slug')
-    },
     soonNavText() {
       return this.$t('header.nav.soon.text').toUpperCase()
     },

@@ -1,12 +1,10 @@
 <template>
-  <div class="my-10">
-    <slot></slot>
-  </div>
+  <h2 class="font-bold text-7xl"><slot></slot></h2>
 </template>
 
 <script>
 export default {
-  name: 'AppButtonsSection',
+  name: 'ElTitle',
 }
 </script>
 

@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'AppSection',
+  name: 'CtSection',
   props: {
     isWideFull: {
       type: Boolean,
@@ -46,5 +46,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

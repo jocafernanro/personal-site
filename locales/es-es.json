@@ -22,7 +22,16 @@
         "download-cv": "Descargar CV.",
         "say-hello": "Di hola."
       }
+    },
+    "what-i-write": {
+      "title": "Algunas cosas que escribo.",
+      "subtitle": "Me gusta aprender y compartir. Escribir me ayuda a afianzar y fortalecer mis conocimientos, así como ayudar a otras personas a aprender y crecer."
+    },
+    "what-i-code": {
+      "title": "Algunos desarrollos que he realizado.",
+      "subtitle": "Me encanta estar creando constantemente. Crear me permite desarrollar mi creatividad y satisfacer mi inquietud, así como mejorar mis conocimientos y experiencias"
     }
   },
-  "read-more": "Read more"
+  "read-more": "Leer más.",
+  "see-more": "Ver más."
 }

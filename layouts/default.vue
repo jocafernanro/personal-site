@@ -1,13 +1,20 @@
 <template>
-  <div>
-    <AppHeader />
+  <div class="">
+    <ui-header />
     <Nuxt />
+    <ui-footer />
   </div>
 </template>
 
 <script>
+import uiHeader from '@/components/ui/uiHeader'
+import uiFooter from '@/components/ui/uiFooter'
 export default {
   name: 'Default',
+  components: {
+    uiHeader,
+    uiFooter,
+  },
 }
 </script>
 

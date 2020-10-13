@@ -1,6 +1,6 @@
 <template>
   <button
-    class="mx-2 font-semibold text-lg px-5 py-3 rounded"
+    class="mx-2 font-semibold text-lg px-5 py-3 rounded-lg"
     :class="[bgColor, textColor]"
   >
     <slot></slot>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'AppButton',
+  name: 'ElButton',
   props: {
     type: {
       type: String,

@@ -1,12 +1,12 @@
 <template>
-  <h1 class="font-extrabold text-8xl text-primary tracking-tight">
+  <div class="my-10">
     <slot></slot>
-  </h1>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'MainTitle',
+  name: 'ButtonsContainer',
 }
 </script>
 
