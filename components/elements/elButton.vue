@@ -1,6 +1,6 @@
 <template>
   <button
-    class="mx-2 font-semibold text-lg px-5 py-3 rounded-lg"
+    class="mr-2 font-semibold text-lg px-5 py-3 rounded-lg"
     :class="[bgColor, textColor]"
   >
     <slot></slot>
@@ -17,6 +17,10 @@ export default {
       validator: (value) => {
         return value.includes('primary') || value.includes('secondary')
       },
+    },
+    linkTo: {
+      type: String,
+      default: '',
     },
   },
   computed: {

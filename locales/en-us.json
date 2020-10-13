@@ -32,7 +32,10 @@
       "subtitle": "I love to be creating constantly. Creating allows me to develop my creativity and satisfy my curiosity, as well as improve my knowledge and experience."
     }
   },
-
+  "footer": {
+    "title": "Say Hello.",
+    "subtitle": "I'm always open to chat or have a coffee. You can connect with me directly from my email jocafernanro@gmail.com. You can also find me on github/instagram as @jocafernanro."
+  },
   "read-more": "Read more.",
   "see-more": "See more."
 }

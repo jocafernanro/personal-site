@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-col justify-between py-6 px-8 h-64 bg-white rounded-lg border border-secondary-light"
+    class="flex flex-col justify-between py-6 px-10 h-64 bg-white rounded-lg border border-secondary-light"
   >
     <header>
       <h3 class="font-bold text-3xl leading-tight tracking-normal">

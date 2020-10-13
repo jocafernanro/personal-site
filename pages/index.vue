@@ -16,35 +16,41 @@
         {{ $t('home.landing-section.subtitle') }}
       </template>
 
-      <template #main-button>
-        {{ $t('home.landing-section.buttons.know-me') }}
-      </template>
+      <template #buttons>
+        <el-button>{{ $t('home.landing-section.buttons.know-me') }}</el-button>
 
-      <template #secondary-button>
-        {{ $t('home.landing-section.buttons.download-cv') }}
-      </template>
+        <el-button type="secondary">{{
+          $t('home.landing-section.buttons.download-cv')
+        }}</el-button>
 
-      <template #extra-button>
-        {{ $t('home.landing-section.buttons.say-hello') }}
+        <el-button type="secondary">{{
+          $t('home.landing-section.buttons.say-hello')
+        }}</el-button>
       </template>
     </ui-hero>
 
     <ui-home-wide-image />
 
     <ui-home-what-i-blog />
+
+    <ui-home-what-i-code />
   </div>
 </template>
 
 <script>
+import elButton from '@/components/elements/elButton'
 import uiHero from '@/components/ui/uiHero'
 import uiHomeWideImage from '@/components/ui/home/uiHomeWideImage'
 import uiHomeWhatIBlog from '@/components/ui/home/uiHomeWhatIBlog'
+import uiHomeWhatICode from '@/components/ui/home/uiHomeWhatICode'
 
 export default {
   components: {
+    elButton,
     uiHero,
     uiHomeWideImage,
     uiHomeWhatIBlog,
+    uiHomeWhatICode,
   },
 }
 </script>

@@ -4,9 +4,7 @@
     <slot name="interline"></slot>
     <el-main-subtitle><slot name="subtitle"></slot></el-main-subtitle>
     <ct-buttons>
-      <el-button><slot name="main-button"></slot></el-button>
-      <el-button><slot name="secondary-button"></slot></el-button>
-      <el-button><slot name="extra-button"></slot></el-button>
+      <slot name="buttons"></slot>
     </ct-buttons>
   </ct-section>
 </template>
@@ -17,7 +15,6 @@ import ctButtons from '@/components/containers/ctButtons'
 
 import elMainTitle from '@/components/elements/elMainTitle'
 import elMainSubtitle from '@/components/elements/elMainSubtitle'
-import elButton from '@/components/elements/elButton'
 
 export default {
   name: 'UiHero',
@@ -27,7 +24,6 @@ export default {
 
     elMainTitle,
     elMainSubtitle,
-    elButton,
   },
 }
 </script>

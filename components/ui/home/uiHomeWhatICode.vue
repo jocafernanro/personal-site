@@ -1,11 +1,11 @@
 <template>
   <ct-section>
     <el-title>
-      {{ $t('home.what-i-write.title') }}
+      {{ $t('home.what-i-code.title') }}
     </el-title>
 
     <el-subtitle>
-      {{ $t('home.what-i-write.subtitle') }}
+      {{ $t('home.what-i-code.subtitle') }}
     </el-subtitle>
 
     <ct-cards :articles="articles" />
@@ -24,7 +24,7 @@ import elSubtitle from '@/components/elements/elSubtitle'
 import elButton from '@/components/elements/elButton'
 
 export default {
-  name: 'UiHomeWhatIBlog',
+  name: 'UiHomeWhatICode',
   components: {
     ctSection,
     ctCards,
