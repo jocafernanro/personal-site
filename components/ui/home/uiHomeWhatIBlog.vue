@@ -1,22 +1,23 @@
 <template>
   <ct-section>
     <el-title>
-      {{ $t('home.what-i-write.title') }}
+      {{ $t(BLOG.TITLE) }}
     </el-title>
 
     <el-subtitle>
-      {{ $t('home.what-i-write.subtitle') }}
+      {{ $t(BLOG.SUBTITLE) }}
     </el-subtitle>
 
     <ct-cards :articles="articles" />
 
     <el-button>
-      {{ $t('read-more') }}
+      {{ $t(READ_MORE) }}
     </el-button>
   </ct-section>
 </template>
 
 <script>
+import { LOCALES } from '@/utils/constants'
 import ctSection from '@/components/containers/ctSection'
 import ctCards from '@/components/containers/ctCards'
 import elTitle from '@/components/elements/elTitle'
@@ -35,6 +36,8 @@ export default {
   },
   data() {
     return {
+      BLOG: LOCALES.HOME.WHAT_I_WRITE,
+      READ_MORE: LOCALES.READ_MORE,
       articles: [
         {
           title: 'Como instalar hyper.js en windows',

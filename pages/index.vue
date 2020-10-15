@@ -1,30 +1,19 @@
 <template>
   <div>
-    <ui-hero>
-      <template #title>
-        {{ $t('home.landing-section.title') }}
-      </template>
-
-      <template #interline>
-        <p
-          class="text-primary font-semibold text-xl font-space-mono"
-          v-html="$t('home.landing-section.hello-code')"
-        ></p>
-      </template>
-
-      <template #subtitle>
-        {{ $t('home.landing-section.subtitle') }}
-      </template>
-
+    <ui-hero
+      :title="$t(LANDING_SECTION.TITLE)"
+      :hello-code-path="LANDING_SECTION.HELLO_CODE.ROOT"
+      :subtitle="$t(LANDING_SECTION.SUBTITLE)"
+    >
       <template #buttons>
-        <el-button>{{ $t('home.landing-section.buttons.know-me') }}</el-button>
+        <el-button>{{ $t(LANDING_SECTION.BUTTONS.KNOW_ME) }}</el-button>
 
         <el-button type="secondary">{{
-          $t('home.landing-section.buttons.download-cv')
+          $t(LANDING_SECTION.BUTTONS.DOWNLOAD_CV)
         }}</el-button>
 
         <el-button type="secondary">{{
-          $t('home.landing-section.buttons.say-hello')
+          $t(LANDING_SECTION.BUTTONS.SAY_HELLO)
         }}</el-button>
       </template>
     </ui-hero>
@@ -38,6 +27,8 @@
 </template>
 
 <script>
+import { LOCALES } from '@/utils/constants'
+
 import elButton from '@/components/elements/elButton'
 import uiHero from '@/components/ui/uiHero'
 import uiHomeWideImage from '@/components/ui/home/uiHomeWideImage'
@@ -51,6 +42,11 @@ export default {
     uiHomeWideImage,
     uiHomeWhatIBlog,
     uiHomeWhatICode,
+  },
+  data() {
+    return {
+      LANDING_SECTION: LOCALES.HOME.LANDING_SECTION,
+    }
   },
 }
 </script>

@@ -4,7 +4,7 @@
     <nav class="relative">
       <ul>
         <li class="menu-item text-secundary">
-          {{ $t('header.nav.soon.courses') }}
+          {{ $t(NAV.SOON.COURSES) }}
         </li>
       </ul>
       <span
@@ -14,21 +14,28 @@
     </nav>
     <nav>
       <ul class="flex flex-row">
-        <li class="menu-item">{{ $t('header.nav.home') }}</li>
-        <li class="menu-item">{{ $t('header.nav.about-me') }}</li>
-        <li class="menu-item">{{ $t('header.nav.blog') }}</li>
-        <li class="menu-item">{{ $t('header.nav.contact') }}</li>
+        <li class="menu-item">{{ $t(NAV.HOME) }}</li>
+        <li class="menu-item">{{ $t(NAV.ABOUT_ME) }}</li>
+        <li class="menu-item">{{ $t(NAV.BLOG) }}</li>
+        <li class="menu-item">{{ $t(NAV.CONTACT) }}</li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
+import { LOCALES } from '@/utils/constants'
+
 export default {
   name: 'UiHeader',
+  data() {
+    return {
+      NAV: LOCALES.HEADER.NAV,
+    }
+  },
   computed: {
     soonNavText() {
-      return this.$t('header.nav.soon.text').toUpperCase()
+      return this.$t(this.NAV.SOON.TEXT).toUpperCase()
     },
   },
 }

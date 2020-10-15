@@ -7,15 +7,21 @@
       "contact": "Say Hello.",
       "soon": {
         "text": "Soon",
-        "courses": "Courses",
-        "code": "Code"
+        "courses": "Courses.",
+        "code": "Code."
       }
     }
   },
   "home": {
     "landing-section": {
       "title": "Hello, I'm Jose C.",
-      "hello-code": "<b>Jose</b> = iAm.<b>Developer()</b> && iAm.<b>Creativo()</b> && at.<b>Sevilla()</b>",
+      "hello-code": {
+        "text": "{name} = iAm.{opt1} && iAm.{opt2} && at.{location}",
+        "name": "Jose",
+        "opt1": "Developer()",
+        "opt2": "Creative()",
+        "location": "Sevilla()"
+      },
       "subtitle": "Creating digital experiences with impact through technology.",
       "buttons": {
         "know-me": "Get to know me.",

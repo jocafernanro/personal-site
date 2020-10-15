@@ -1,8 +1,31 @@
 <template>
   <ct-section is-text-centered>
-    <el-main-title><slot name="title"></slot></el-main-title>
-    <slot name="interline"></slot>
-    <el-main-subtitle><slot name="subtitle"></slot></el-main-subtitle>
+    <el-main-title>{{ title }}</el-main-title>
+
+    <i18n
+      v-if="helloCodePath"
+      :path="`${helloCodePath}.text`"
+      tag="p"
+      class="text-primary font-semibold text-xl font-space-mono"
+    >
+      <template v-slot:name>
+        <b>{{ $t(`${helloCodePath}.name`) }}</b>
+      </template>
+
+      <template v-slot:opt1>
+        <b>{{ $t(`${helloCodePath}.opt1`) }}</b>
+      </template>
+
+      <template v-slot:opt2>
+        <b>{{ $t(`${helloCodePath}.opt2`) }}</b>
+      </template>
+
+      <template v-slot:location>
+        <b>{{ $t(`${helloCodePath}.location`) }}</b>
+      </template>
+    </i18n>
+
+    <el-main-subtitle>{{ subtitle }}</el-main-subtitle>
     <ct-buttons>
       <slot name="buttons"></slot>
     </ct-buttons>
@@ -24,6 +47,20 @@ export default {
 
     elMainTitle,
     elMainSubtitle,
+  },
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    subtitle: {
+      type: String,
+      required: true,
+    },
+    helloCodePath: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>

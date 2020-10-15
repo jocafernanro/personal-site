@@ -6,16 +6,22 @@
       "blog": "Blog.",
       "contact": "Di hola.",
       "soon": {
-        "text": "Próximamente",
-        "courses": "Cursos",
-        "code": "Código"
+        "text": "Próximamente.",
+        "courses": "Cursos.",
+        "code": "Código."
       }
     }
   },
   "home": {
     "landing-section": {
       "title": "Hola, Soy Jose C.",
-      "hello-code": "<b>Jose</b> = soy.<b>Developer()</b> && soy.<b>Creativo()</b> && vivoEn.<b>Sevilla()</b>",
+      "hello-code": {
+        "text": "{name} = iAm.{opt1} && iAm.{opt2} && at.{location}",
+        "name": "Jose",
+        "opt1": "Desarrollador()",
+        "opt2": "Creativo()",
+        "location": "Sevilla()"
+      },
       "subtitle": "Creando experiencias digitales con impacto a través de la tecnología.",
       "buttons": {
         "know-me": "Conóceme.",
