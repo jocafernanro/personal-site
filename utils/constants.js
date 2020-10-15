@@ -14,20 +14,20 @@ export const LOCALES = {
   },
   HOME: {
     LANDING_SECTION: {
-      TITLE: 'home.landing-section.title',
+      TITLE: 'home.hero.title',
       HELLO_CODE: {
-        ROOT: 'home.landing-section.hello-code',
-        TEXT: 'home.landing-section.hello-code.text',
-        NAME: 'home.landing-section.hello-code.name',
-        OPT1: 'home.landing-section.hello-code.opt1',
-        OPT2: 'home.landing-section.hello-code.opt2',
-        LOCATION: 'home.landing-section.hello-code.location',
+        ROOT: 'home.hero.hello-code',
+        TEXT: 'home.hero.hello-code.text',
+        NAME: 'home.hero.hello-code.name',
+        OPT1: 'home.hero.hello-code.opt1',
+        OPT2: 'home.hero.hello-code.opt2',
+        LOCATION: 'home.hero.hello-code.location',
       },
-      SUBTITLE: 'home.landing-section.subtitle',
+      SUBTITLE: 'home.hero.subtitle',
       BUTTONS: {
-        KNOW_ME: 'home.landing-section.buttons.know-me',
-        DOWNLOAD_CV: 'home.landing-section.buttons.download-cv',
-        SAY_HELLO: 'home.landing-section.buttons.say-hello',
+        KNOW_ME: 'home.hero.buttons.know-me',
+        DOWNLOAD_CV: 'home.hero.buttons.download-cv',
+        SAY_HELLO: 'home.hero.buttons.say-hello',
       },
     },
     WHAT_I_WRITE: {
@@ -37,6 +37,17 @@ export const LOCALES = {
     WHAT_I_CODE: {
       TITLE: 'home.what-i-code.title',
       SUBTITLE: 'home.what-i-code.subtitle',
+    },
+  },
+  ABOUT_ME: {
+    HERO: {
+      TITLE: 'about-me.hero.title',
+      SUBTITLE: 'about-me.hero.subtitle',
+      BUTTONS: {
+        KNOW_ME: 'about-me.hero.buttons.know-me',
+        DOWNLOAD_CV: 'about-me.hero.buttons.download-cv',
+        SAY_HELLO: 'about-me.hero.buttons.say-hello',
+      },
     },
   },
   FOOTER: {

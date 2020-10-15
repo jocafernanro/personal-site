@@ -13,7 +13,7 @@
     }
   },
   "home": {
-    "landing-section": {
+    "hero": {
       "title": "Hello, I'm Jose C.",
       "hello-code": {
         "text": "{name} = iAm.{opt1} && iAm.{opt2} && at.{location}",
@@ -36,6 +36,17 @@
     "what-i-code": {
       "title": "Some stuff I code",
       "subtitle": "I love to be creating constantly. Creating allows me to develop my creativity and satisfy my curiosity, as well as improve my knowledge and experience."
+    }
+  },
+  "about-me": {
+    "hero": {
+      "title": "About me.",
+      "subtitle": "Multidisciplinary developer and creative, multipotential person, entrepreneur, with a great interest in personal and human development, as well as in leadership, ethics and art.",
+      "buttons": {
+        "know-me": "Get to know me.",
+        "download-cv": "Download CV.",
+        "say-hello": "Say hello."
+      }
     }
   },
   "footer": {

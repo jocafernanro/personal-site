@@ -1,13 +1,5 @@
 <template>
-  <ct-section>
-    <el-title>
-      {{ $t(CODE.TITLE) }}
-    </el-title>
-
-    <el-subtitle>
-      {{ $t(CODE.SUBTITLE) }}
-    </el-subtitle>
-
+  <ct-section :title="$t(CODE.TITLE)" :subtitle="$t(CODE.SUBTITLE)">
     <ct-cards :articles="articles" />
 
     <el-button>
@@ -20,8 +12,6 @@
 import { LOCALES } from '@/utils/constants'
 import ctSection from '@/components/containers/ctSection'
 import ctCards from '@/components/containers/ctCards'
-import elTitle from '@/components/elements/elTitle'
-import elSubtitle from '@/components/elements/elSubtitle'
 import elButton from '@/components/elements/elButton'
 
 export default {
@@ -29,9 +19,6 @@ export default {
   components: {
     ctSection,
     ctCards,
-
-    elTitle,
-    elSubtitle,
     elButton,
   },
   data() {

@@ -13,7 +13,7 @@
     }
   },
   "home": {
-    "landing-section": {
+    "hero": {
       "title": "Hola, Soy Jose C.",
       "hello-code": {
         "text": "{name} = iAm.{opt1} && iAm.{opt2} && at.{location}",
@@ -36,6 +36,17 @@
     "what-i-code": {
       "title": "Algunos desarrollos que he realizado.",
       "subtitle": "Me encanta estar creando constantemente. Crear me permite desarrollar mi creatividad y satisfacer mi inquietud, así como mejorar mis conocimientos y experiencias"
+    }
+  },
+  "about-me": {
+    "hero": {
+      "title": "Sobre mi.",
+      "subtitle": "Desarrollador multidisciplinar y creativo, persona multipotencial, emprendedor, con un gran interés en el desarrollo personal y humano, así como en el liderazgo, la ética y el arte.",
+      "buttons": {
+        "know-me": "Conóceme.",
+        "download-cv": "Descargar CV.",
+        "say-hello": "Di hola."
+      }
     }
   },
   "footer": {
